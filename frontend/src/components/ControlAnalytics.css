@@ -1,0 +1,34 @@
+.control-analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.control-chart-card {
+  background: rgba(17, 24, 39, 0.78);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.control-chart-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.2px;
+}
+
+.stacked-chart-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 260px;
+}
+
+@media (max-width: 1200px) {
+  .control-analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}

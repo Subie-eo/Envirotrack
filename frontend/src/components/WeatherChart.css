@@ -1,0 +1,52 @@
+.weather-chart {
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.weather-chart:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(148, 163, 184, 0.3);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+}
+
+.chart-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.5px;
+}
+
+.chart-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.chart-header-row .chart-title {
+  margin-bottom: 0;
+}
+
+.chart-stat {
+  color: #cbd5e1;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.5);
+  white-space: nowrap;
+}
+
+.recharts-wrapper {
+  font-family: inherit;
+}

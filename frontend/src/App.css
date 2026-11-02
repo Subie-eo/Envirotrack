@@ -1,0 +1,89 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27 0%, #0f1419 100%);
+  position: relative;
+  overflow: visible;
+}
+
+.app-header {
+  background: linear-gradient(180deg, rgba(13, 17, 23, 0.95) 0%, rgba(22, 27, 34, 0.8) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(48, 54, 61, 0.3);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  height: 80px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #f0f6fc;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(48, 54, 61, 0.3);
+  border: 1px solid rgba(48, 54, 61, 0.5);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b949e;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.connection-status:hover {
+  background: rgba(48, 54, 61, 0.5);
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3fb950;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 8px rgba(63, 185, 80, 0.5);
+}
+
+.status-indicator.disconnected {
+  background: #f85149;
+  animation: pulse-danger 2s infinite;
+  box-shadow: 0 0 8px rgba(248, 81, 73, 0.5);
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.6; 
+  }
+}
+
+@keyframes pulse-danger {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.6; 
+  }
+}
+
+.status-text {
+  color: #c9d1d9;
+}
+
+.app-main {
+  min-height: calc(100vh - 80px);
+  height: auto;
+  overflow: auto;
+}
